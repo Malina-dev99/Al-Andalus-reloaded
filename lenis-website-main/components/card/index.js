@@ -1,6 +1,6 @@
 import cn from 'clsx'
-import { useRef, useState } from 'react'
 import s from './card.module.scss'
+import { useRef, useState } from 'react'
  
 export const Card = ({
   number,
