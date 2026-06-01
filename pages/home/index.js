@@ -15,6 +15,7 @@ import { useIntersection, useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import { Modal } from 'components/modal'
 
+
 // const SFDR = dynamic(() => import('icons/sfdr.svg'), { ssr: false })
 const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
 const Sponsor = dynamic(() => import('icons/sponsor.svg'), { ssr: false })
@@ -40,7 +41,10 @@ const FeatureCards = dynamic(
   { ssr: false }
 )
 
-
+const WebGL = dynamic(
+  () => import('components/webgl').then(({ WebGL }) => WebGL),
+  { ssr: false }
+)
 
 const HeroTextIn = ({ children, introOut }) => {
   return (
@@ -199,6 +203,11 @@ export default function Home() {
   const intersection = useIntersection(inUseRef, {
     threshold: 0.2,
   })
+
+    const WebGL = dynamic(
+  () => import('components/webgl').then(({ WebGL }) => WebGL),
+  { ssr: false }
+)
   useEffect(() => {
     if (intersection?.isIntersecting) {
       setIsVisible(true)
@@ -215,7 +224,9 @@ export default function Home() {
       }}
       className={s.home}
     >
-    
+  <div className={s.canvas}>
+  <WebGL />
+</div>
 
       <Modal />
 
@@ -482,7 +493,7 @@ export default function Home() {
               expansión de la<span className={s.tooltip} data-tip="La escuela jurídica malikí es
                una de las principales corrientes del derecho islámico suní. Fue fundada por el
                jurista Malik ibn Anas en el siglo VIII y se basa en el Corán, las enseñanzas del 
-               profeta Mahoma y las costumbres de la comunidad musulmana de Medina.">escuela jurídica malikí</span>, que se convirtió en la corriente
+               profeta Mahoma y las costumbres de la comunidad musulmana de Medina."> escuela jurídica malikí</span>, que se convirtió en la corriente
               dominante del derecho islámico en Al-Ándalus.
               </p>
               <p className="p">
