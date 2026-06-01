@@ -215,7 +215,7 @@ export default function Home() {
     <Layout
       theme={theme}
       seo={{
-        title: 'Al Andalus Reloaded – Historia de Al-Ándalus',
+        title: 'Al Andalus Reloaded – Historia de Al-Ándalus en Córdoba',
         description:
           'Un viaje por la historia de Al-Ándalus en Córdoba.',
       }}
@@ -267,7 +267,7 @@ export default function Home() {
               <p className="p-s">Coloca el cursor sobre las </p>
             </HeroTextIn>
             <HeroTextIn introOut={introOut}>
-              <p className="p-s">palabras subrayadas </p>
+              <p className="p-s">palabras subrayadas</p>
             </HeroTextIn>
             <HeroTextIn introOut={introOut}>
               <p className="p-s">para ver su significado.</p>
@@ -420,7 +420,7 @@ export default function Home() {
             <Card
               className={s.card}
               number="00"
-              text="Abderramán I convierte la basílica visigoda de San Vicente en la primitiva mezquita. Su planta presenta 11 naves perpendiculares al muro de la qibla y los capiteles eran de acarreamiento de otras construcciones."
+              text="Abderramán I convierte la basílica visigoda de San Vicente en la primitiva mezquita. Su planta presenta 11 naves perpendiculares al muro de la qibla y los capiteles eran de acarreamiento de otras construcciones. *Coloca el cursor sobre la carta para ver la imagen."
               hoverImage="/images/mezquita-00.jpg"
             />
             <Card
