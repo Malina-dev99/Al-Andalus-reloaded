@@ -70,7 +70,7 @@ export const Title = ({ className }) => {
   return (
     <div className={cn(className, s.titleTextWrapper)}>
       <span className={s.pressStartTitle}>Al Andalus</span>
-      <span className={cn(s.pressStartTitle, s.pressStartTitleSub, introOut && s.translate)}>reloaded</span>
+      <span className={cn(s.pressStartTitle, s.pressStartTitleSub)}>reloaded</span>
     </div>
   )
 }
