@@ -65,7 +65,7 @@ export const Intro = () => {
 }
 
 export const Title = ({ className }) => {
-  const introOut = useStore(({ introOut }) => introOut)
+  
 
   return (
     <div className={cn(className, s.titleTextWrapper)}>
