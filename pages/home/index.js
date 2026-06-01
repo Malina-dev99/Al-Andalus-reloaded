@@ -204,10 +204,7 @@ export default function Home() {
     threshold: 0.2,
   })
 
-    const WebGL = dynamic(
-  () => import('components/webgl').then(({ WebGL }) => WebGL),
-  { ssr: false }
-)
+  
   useEffect(() => {
     if (intersection?.isIntersecting) {
       setIsVisible(true)
