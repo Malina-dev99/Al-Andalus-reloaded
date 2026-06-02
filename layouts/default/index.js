@@ -102,10 +102,7 @@ export function Layout({
     <>
       <CustomHead {...seo} />
 
-      <Script
-      src="https://t.contentsquare.net/uxa/dad3789f750b3.js"
-      strategy="afterInteractive"
-    />
+    
 
       <div className={cn(`theme-${theme}`, s.layout, className)}>
         <PageTransition />
